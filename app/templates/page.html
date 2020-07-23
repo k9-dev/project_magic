@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h1>My Magic Webpage</h1>
+    <ul id="navigation">
+
+    </ul>
+
+
+
+    <pre>this is test task.
+           <h3>Congratulation</h3>
+           You are have admin access without any limitations. I have used REST API so you able to try play with it.
+           <ul>
+               <li>There you can check all users in DB: <a href="/magic/api/v1.0/users">/magic/api/v1.0/users</a></li>
+               <li>User 1: <a href="/magic/api/v1.0/users/1">/magic/api/v1.0/users/1</a></li>
+               <li>also we have User 2 in DB: <a href="/magic/api/v1.0/users/2">/magic/api/v1.0/users/2</a></li>
+               <li>You able reset counter and magic link for User 1 there: <a href="/magic/api/v1.0/users/1/reset-link">/magic/api/v1.0/users/1/reset-link</a></li>'
+               <li></li>
+               <li>and just magic links for users from DB:
+               {% for item in urls %}
+                    <li><a href="{{ item }}">{{ item }}</a></li>
+               {% endfor %}
+               <li> Thank you.</li>
+               </li>
+           </ul>
+           </pre>
+</body>
+</html>
+
+
+
+
+
+
