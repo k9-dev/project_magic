@@ -1,0 +1,6 @@
+from magic import app
+
+if __name__ == '__main__':
+
+    print(f'app.url_map: {app.url_map}')
+    app.run(debug=True, use_debugger=False, use_reloader=True, passthrough_errors=True)

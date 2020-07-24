@@ -1,5 +1,5 @@
-from app.db import db
-from app.models import User
+from magic import db
+from magic.models import User
 
 db.create_all()
 user1 = User(username='user1', email='test@email.com')

@@ -1,6 +1,6 @@
 from datetime import datetime
 
-from app.db import db, app
+from magic import db, app
 
 
 class User(db.Model):

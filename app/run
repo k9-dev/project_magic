@@ -1,4 +1,0 @@
-# Run a test server.
-from app.magic import app
-
-app.run(debug=True, use_debugger=False, use_reloader=True, passthrough_errors=True)

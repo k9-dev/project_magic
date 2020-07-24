@@ -1,9 +1,9 @@
 import secrets
 
-from flask import jsonify, abort, request, render_template
+from flask import jsonify, abort, request, render_template, Flask
 
-from app.db import app, db
-from app.models import User
+from magic import db, app
+from magic.models import User
 
 
 @app.route('/')
@@ -56,3 +56,18 @@ def use_magic(magic_id):
     user.counter = User.counter + 1
     db.session.commit()
     return jsonify(user.get_security_payload())
+
+
+@app.route('/magic/api/v1.0/fill_db', methods=['GET'])
+def fill_db():
+    db.drop_all()
+    db.create_all()
+    user1 = User(username='user1', email='test@email.com')
+    user2 = User(username='user2', email='test2@email.com')
+
+    db.session.add(user1)
+    db.session.add(user2)
+    db.session.commit()
+
+    users = [user.get_security_payload() for user in User.query.order_by(User.username).all()]
+    return jsonify(users)
