@@ -1,3 +1,12 @@
+[Adblock Plus 2.0]
+! id: 8C13E995-8F06-4927-BEA7-6C845FB7EEBE
+! Version: 202501010701
+! Title: MEasyList
+! Last modified: 01 Jan 2025 07:01 UTC
+! Expires: 1 days (update frequency)
+! Homepage: https://measylist.to/
+! Licence: https://measylist.to/pages/licence.html
+!
 https://cdn77-fs.bestssrv.com/*
 ||cdn77-fs.bestssrv.com^
 ||cdn77.bestssrv.com^
