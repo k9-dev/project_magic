@@ -1,2 +1,3 @@
-||cdn77-fs.bestssrv.com/
-||cdn77.bestssrv.com/
+https://cdn77-fs.bestssrv.com/*
+||cdn77-fs.bestssrv.com^
+||cdn77.bestssrv.com^
